@@ -1,0 +1,67 @@
+@import '../../global.scss';
+
+.navbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: transparent;
+
+    @include mobile {
+        padding: 10px 20px;
+    }
+
+    .logoContainer {
+        
+        .logo {
+            color: var(--font);
+            text-transform: uppercase;
+            font-size: 28px;
+            font-weight: 600;
+
+            @include tablet {
+                font-size: 24px;
+            }
+        }
+    }
+
+    .navList {
+        display: flex;
+        gap: 20px;
+
+        @include tablet {
+            display: none;
+        }
+
+        .listItemContainer {
+
+            .listItem {
+
+                &.selected {
+                    transform: scale(1.15);
+                    color: orange;
+
+                    &:hover {
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+    }
+
+    .navRight {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 15px;
+
+        .navIcon {
+            width: 30px;
+            cursor: pointer;
+        }
+    }
+}

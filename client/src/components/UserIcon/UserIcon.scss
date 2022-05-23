@@ -1,0 +1,17 @@
+@import '../../global.scss';
+
+.userIcon { 
+    background-color: #fff;
+    padding: 5px 15px;
+    border-radius: 21px;
+    cursor: pointer;
+    transition: all .3s ease;
+
+    @include mobile {
+        display: none;
+    }
+
+    &:hover {
+        opacity: .5;
+    }
+}
