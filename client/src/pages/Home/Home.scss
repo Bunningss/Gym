@@ -11,7 +11,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  // animation: bgChange 25s both infinite;
+  animation: bgChange 25s both infinite;
 
   @include laptop {
     padding: 0 200px;
