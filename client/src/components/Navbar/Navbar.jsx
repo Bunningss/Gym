@@ -10,7 +10,7 @@ const Navbar = ( { active, setActive } ) => {
   const [ selected, setSelected ] = useState(1);
   return (
     <div className='navbar'>
-      <Link to='/' className='logoContainer'>
+      <Link onClick={() => setActive(!active)} to='/' className='logoContainer'>
         <h2 className="logo">fitness club</h2>
       </Link>
       <ul className="navList">

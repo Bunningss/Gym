@@ -50,9 +50,26 @@ ul {
   }
 
   // ResponsiveNess
+$nestMax: 1300px;
+
+@mixin nestMax {
+  @media (max-width: #{$nestMax}) {
+    @content
+  }
+}
+
 $laptop: 1024px;
+
 @mixin laptop {
   @media (max-width: #{$laptop}) {
+    @content
+  }
+}
+
+$iPad: 820px;
+
+@mixin iPad {
+  @media (max-width: #{$iPad}) {
     @content
   }
 }
@@ -69,6 +86,14 @@ $mobile: 500px;
 
 @mixin mobile {
   @media (max-width: #{$mobile}) {
+    @content
+  }
+}
+
+$tiny: 375px;
+
+@mixin tiny {
+  @media (max-width: #{$tiny}) {
     @content
   }
 }

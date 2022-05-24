@@ -13,11 +13,15 @@
   align-items: center;
   animation: bgChange 25s both infinite;
 
+  @include nestMax {
+    padding: 0 200px;
+  }
+
   @include laptop {
     padding: 0 200px;
   }
 
-  @include tablet {
+  @include iPad {
     padding: 0 100px;
   }
 
@@ -41,6 +45,10 @@
       font-size: 24px;
     }
 
+    @include tiny {
+      font-size: 20px;
+    }
+
     &::after {
       content: "";
       animation: textChange 25s ease-in-out infinite;
@@ -60,6 +68,7 @@
 
     @include mobile {
       font-size: 12px;
+      text-align: center;
     }
   }
 

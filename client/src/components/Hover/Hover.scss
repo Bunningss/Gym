@@ -1,0 +1,16 @@
+.hover {
+    background-color: orangered;
+    padding: 20px 40px;
+    position: absolute;
+    bottom: -128px;
+    left: -100px;
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+    border-radius: 3px;
+    transition: all .3s ease;
+
+    &:hover {
+        opacity: 1;
+    }
+}

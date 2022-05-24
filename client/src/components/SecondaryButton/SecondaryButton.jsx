@@ -1,8 +1,8 @@
 import './SecondaryButton.scss';
 
-const SecondaryButton = ({ text }) => {
+const SecondaryButton = ({ text, onclick }) => {
   return (
-    <button className="secondaryBtn">{text}</button>
+    <button onClick={onclick} className="secondaryBtn">{text}</button>
   )
 }
 
